@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'nunito';
+    src: url(fontes/Nunito-Medium.ttf);
+    font-weight: normal;
+}
+
+:root {
+    --cor1: #0DD9B3;
+    --cor2: #0BBFAD;
+    --cor3: #0AADBF;
+    --cor4: #0788D9;
+    --cor5: #032F40;
+    --cor6: #E76A32;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'nunito', cursive;
+}
+* {
+    margin: 0px;  /* margem */
+    padding: 0px; /* espaço interno */
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+header {
+    background-image: linear-gradient(to right, var(--cor5), var(--cor4));
+    padding: 5px; /* espaço interno*/
+    min-height: 40px; /* altura */
+    text-align: left; /* centralizar */
+    padding-top: 10px; /* margem interna superior*/
+    font-family:var(--fonte-padrao);
+    padding-bottom: 20px;
+    
+}
+header h2 {
+    color:white;
+    float: right;
+    font-family: var(--fonte-destaque);
+    font-size: 1.7em;
+    margin: auto;
+    margin-right: 5vh;
+    margin-left: 10vh;
+    margin-top: 15vh;
+    max-width: 50%;
+    min-width: 50%;
+    padding: auto;
+}
+
+    nav { 
+        background-image: linear-gradient(to right, var(--cor5), var(--cor4));
+        padding-bottom: 15px;
+    }
+nav a {
+    color:white;
+    text-decoration: none; /* retira sublinhado*/
+    padding: 1vw; /* margem interna*/
+    font-weight: bold; /* negrito*/
+    border-radius: 5px; /* borda arredondada*/
+    transition-duration: 0.3s; /* delay de transição*/
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    margin-right: 2vw;
+    font-family: var(--fonte-destaque);
+}
+
+nav > a:hover {
+     color: var(--cor2);
+    }
+
+    main img.pequena {
+       
+        margin: auto; /* margem */
+        display: block; /* centraliza*/
+    }
+    
+    main {
+        background-color: white;
+        margin: auto;
+        padding-top: 20px;
+        font-weight: normal;
+        font-size: 1.8em;
+        background-color: white;
+    }
+
+    main h2 {
+
+        background-image: linear-gradient(to right, var(--cor5), var(--cor4));
+        margin-bottom: 50px;
+        color:white;
+        font-family: var(--fonte-destaque);
+        margin-left: 0px;
+        margin-top: -20px;
+        padding-left: 10px;
+        padding-top: 30px;
+
+    }
+
+    main p {
+    
+        text-align: center;
+        font-family: var(--fonte-destaque);
+    }
+
+    }
+
+    main picture {
+        max-width: 150px;
+        display:flex;
+       
+        
+    }
+    div.quadrado {
+        display: inline-block;
+        border: 0px solid black;
+        border-radius: 10px;
+        background-color:white;
+        width: 350px;
+        height: 350px;
+        }
+
+        div#q1 {
+            background-image: url('imagens/pc.png');
+        }
+
+        div#q2 {
+            background-image:url('imagens/phone.png');
+        }
+
+        div#q3 {
+            background-image: url('imagens/responsivo.png');
+        }
+
+    
+    
+    footer {
+        background-color: var(--cor5);
+        color: white;
+        text-align: center;
+    }
